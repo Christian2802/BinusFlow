@@ -1,0 +1,39 @@
+.taskCard {
+  width: 7.5rem;
+  height: 4.4rem;
+  padding: 0.6rem;
+  margin: 0.9rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.selected {
+  transform: scale(1.15);
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.4);
+  z-index: 5;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}

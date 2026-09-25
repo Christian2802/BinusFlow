@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  width: 8rem;
+}
+
+.selected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  user-select: none;
+  min-height: 2.2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.colorBox {
+  width: 2.3rem;
+  height: 1.8rem;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  border: 0.1rem solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.colorBox.selected {
+  border-color: #333;
+}
+
+.list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.4rem;
+  width: 8rem;
+  background-color: white;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.1);
+  z-index: 10;
+  max-height: 9.4rem;
+  overflow-y: auto;
+}

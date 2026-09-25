@@ -1,0 +1,77 @@
+.sidebar {
+    width: 13.8rem;
+    background-color: #001BB7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 0.9rem;
+    transition: width 0.3s;
+}
+
+.sidebar.minimized {
+    width: 3rem;
+}
+
+.sidebar button {
+    background-color: #004cff;
+    border: none;
+    color: white;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.6rem;
+    gap: 0.8rem;
+}
+
+.title img {
+    height: 2rem;
+    width: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 1rem;
+}
+
+.menuItem div {
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.6rem;
+    transition: 0.2s;
+}
+
+.active {
+    background: #004cff;
+}
+
+.menuItem .label{
+    color: white;
+    text-decoration: none;
+}
+
+.menuItem a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menuItem img {
+    height: 1.2em;
+    width: auto;
+    vertical-align: middle;
+}
