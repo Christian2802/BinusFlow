@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./ColorDropdown.module.css";
+import styles from "./ColorDropDown.module.css";
 
 interface ColorDropdownProps {
   colors: string[];
