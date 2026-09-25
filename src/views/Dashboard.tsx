@@ -15,7 +15,7 @@ const Dashboard = () => {
     const stored = localStorage.getItem("tasks");
     return stored ? JSON.parse(stored) : tasksData;
   });
-  const [colors, setColors] = useState<string[]>(() => {
+  const [colors] = useState<string[]>(() => {
     const storedColors = localStorage.getItem("colors");
     return storedColors ? JSON.parse(storedColors) : ["#f0f0f0", "#ff0000", "#00ff00"];
   });
